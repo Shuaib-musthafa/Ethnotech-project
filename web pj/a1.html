@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI & Data Science Education</title>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  
+  <style>
+     html {
+      scroll-behavior: smooth;
+    }
+    .mymove img{
+    margin-top: 15%;
+    margin-bottom: 5%;
+    width: 50%;
+    -webkit-animation: mover 2s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+    .navbar-contact {
+      background-color: #1e3351;
+      color: white;
+    }
+    .navbar-contact .navbar-text {
+      font-size: 14px;
+      margin-right: 10px;
+    }
+    body {
+      background-image: url(ai\ ds\ 2.png);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      padding-top: 70px;
+    }
+    .course-details-area {
+      background-color: #f2f2f2;
+      border: 1px solid #ddd;
+      padding: 20px;
+      padding-bottom: 40px;
+    }
+    .default-padding {
+      padding: 20px;
+    }
+    .additional-section {
+      background-color: #fff;
+      padding: 40px;
+      display: none;
+    }
+    .additional-section h3 {
+      color: #333;
+      margin-bottom: 10px;
+    }
+    .additional-section p {
+      color: #555;
+      line-height: 1.5;
+    }
+    .course-details-area {
+      background-color: #fff;
+      padding: 40px;
+      margin-top: 20px;
+    }
+    .course-meta {
+      display: flex;
+      justify-content: space-between;
+    }
+    .course-meta .item {
+      flex: 1;
+      padding: 0 10px;
+      position: relative;
+    }
+    .course-meta .item:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 1px;
+      background-color: #ccc;
+      top: 0;
+      right: 0;
+    }
+    .course-meta h4 {
+      margin-bottom: 10px;
+    }
+    .content {
+      margin-top: 90px; /* Add margin to push content below fixed navbar */
+    }
+
+    .content {
+      display: none; /* Hide the content by default */
+      margin-top: 20px;
+    }
+    .active {
+      display: block; /* Show the active content */
+    }
+    .box {
+      text-align: justify;
+    }
+    .folder-icon {
+          font-size: 48px;
+          color: #007bff;
+        }
+  </style>
+    <script>
+        $(document).ready(function() {
+          $(window).scroll(function() {
+            var scrollPos = $(window).scrollTop();
+            var additionalSectionPos = $('.additional-section').offset().top;
+            var windowHeight = $(window).height();
+            
+            if (scrollPos > additionalSectionPos - windowHeight + 200) {
+              $('.additional-section').fadeIn();
+            } else {
+              $('.additional-section').fadeOut();
+            }
+          });
+        });
+      </script>
+        <script>
+            $(document).ready(function() {
+              $('.btn-group button').click(function() {
+                // Remove active class from all buttons
+                $('.btn-group button').removeClass('active');
+                
+                // Hide all content
+                $('.content').removeClass('active');
+                
+                // Add active class to the clicked button
+                $(this).addClass('active');
+                
+                // Get the index of the clicked button
+                var index = $(this).index();
+                
+                // Show the corresponding content based on the index
+                $('.content').eq(index).addClass('active');
+              });
+            });
+          </script>
+</head>
+<body>
+    <nav class="navbar navbar-contact navbar-expand-lg  ">
+        <div class="container">
+          <span class="navbar-text">Phone:<br> 0413 264 2001</span>
+          <span class="navbar-text">Email:<br> info@smvec.ac.in</span>
+          <span class="navbar-text">Address:<br> Sri Manakula Vinayagar Engineering College  No.24, Mariyamman Koil street, Madagadipet, Pondicherry-605107</span>
+        </div>
+      </nav>  
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="#">
+      <img src="1.png" alt="Logo" width="500" height="50" style="margin-left: 2rem;">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav" style="margin-left: 28rem;">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="a1.html">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="learn.html">LEARN</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="comp2.html">COMPLAIN</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="achieve.html">ACHIEVEMENT</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link btn btn-primary" href="signin and singup.html">LOGIN</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="signin and singup.html">SIGNUP</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+ 
+  <!-- Rest of your content -->
+    <div class="course-details-area default-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="course-details-info">
+              <!-- Start Top Info -->
+              <div class="top-info">
+                <!-- Title-->
+                <div class="title">
+                  <h2>B.Tech − Artificial Intelligence and Data Science</h2>
+                </div>
+                <!-- End Title-->
+  
+                <!-- Thumbnail -->
+                <div class="thumb">
+                  <img src="h1.webp" alt="Thumb">
+                </div>
+                <!-- End Thumbnail -->
+  
+                <!-- Course Meta -->
+                <div class="course-meta">
+                  <div class="item author">
+                    <!--div class="thumb">
+                        <a href="#"><img alt="Thumb" src="../../assets/img/AIDSLOGOCOVER.jpg"></a>
+                    </div-->
+                    <div class="desc">
+                      <h4>Started</h4>
+                      <a href="#">2019</a>
+                    </div>
+                  </div>
+                  <div class="item category">
+                    <h4>Intake</h4>
+                    <a href="#">60 Seats</a>
+                  </div>
+  
+                  <div class="item price">
+                    <h4>Fees</h4>
+                    <span>Govt approved fee</span>
+                  </div>
+                </div>
+                <!-- End Course Meta -->
+              </div>
+              <!-- End Top Info -->
+  
+              <!-- Rest of the course details -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="container">
+        <div class="btn-group btn-group-sm">
+            <button type="button" class="btn btn-primary ">About Department</button>
+            <button type="button" class="btn btn-primary ">curriculum</button>
+            <button type="button" class="btn btn-primary ">Faculty</button>
+            <button type="button" class="btn btn-primary ">Facility</button>
+        </div>
+        <div class="content active">
+            <div class="box">
+            <h4>About Department</h4>
+            <ul>
+                <li>B.Tech − Artificial Intelligence and Data sciences (AI & DS) is one of the popular courses among engineering aspirants which mainly focuses on computation, analysis of algorithms, programming languages, program design, software engineering, computer hardware, computer networks and problem solving skills. This course has roots in electrical, electronics and communication engineering, mathematics and linguistics. Students study the design, development and analysis of software and hardware used to solve problems for various business, scientific and social contexts.
+                </li>
+                <li>The department has excellent infrastructure in terms of laboratories, classrooms, seminar hall.etc..The department laboratories are interconnected through a well-designed seamless network with internet facility with the speed of 50 mbps to facilitate the student’s access to web resources. With the co-operation and involvement of the dedicated team of well qualified faculty members, the AI&DS department constantly strives to improve its academic standards.</li>
+            </ul>
+            <h4>Vision</h4>
+            <ul>
+                <li>The main goal of artificial intelligence (AI) and Data Science is to program computers to use example data or experience to solve a given problem. AI and DS course aims to inculcate knowledge on the core technologies such as artificial intelligence, data warehousing, data mining and data modeling.</li>
+                <li>To be globally recognized in the field of Artificial Intelligence and Data Science by creating technically sound professionals and by undertaking high quality research for the betterment of the self and humanity.
+                </li>
+            </ul>
+            <h4>The role of Artificial Intelligence and Data sciences (AI & DS)</h4>
+            <ul>
+                <li>Artificial intelligence is here and being rapidly commercialized, with new applications being created not just for manufacturing but also for energy, healthcare, and oil and gas. This will change how we all do business. ∼Joe Kaeser</li>
+                <li>Tech advancements place rising importance on both hard and soft skills. While employees must be able to speak the language of data and other hard skills, soft skills are increasingly essential. Judgment calls, creative thinking, and emotional intelligence are in high demand − and not easily replicated by AI. While change can be slow within an organization, experts say that adapting sooner rather than later is key to future success.
+                </li>
+                <li>Design and develop software application for different industries</li>
+                <li>Manages the software, hardware and network in any industry.</li>
+                <li>Involves in the design and development of the hardware components of PCs & Laptops.</li>
+                <li>Develop software for peripheral computing device such as printers, modems and scanners</li>
+                <li>Write codes and algorithms for operating systems like Windows, Linux etc.</li>
+                <li>Develop the process and software for both domestic and industrial automation.</li>
+            </ul>
+            </div>
+          </div>
+          <div class="content">
+            <div class="panel group">
+                <div class="panel panel-primary">
+                <div class="panel-heading">Curriculum</div>
+                <div class="panel-body">
+                    <a href="1_B.Tech_AI_and_DS_R20.pdf" target="_blank">
+                    <i class="fas fa-folder folder-icon"></i>
+                  </a></div>
+                </div>
+              </div>  
+            
+          </div>
+          <div class="content">
+            <h4>Faculty</h4>
+            <p></p>
+          </div>
+          <div class="content">
+            <div class="box">
+            <h4>Library</h4>
+            <ul>
+              <li>The Learning Centre of our department stands as an epitome of intellectual elegance and a repository of technical education, in particular, engineering and technology. It plays a pivotal role in the process of promoting and demonstrating a desire for information, knowledge, and understanding among the students, and aides them in the development of their professional and personal lives. The Learning Centre inspires and supports students, faculty, researchers, and staff in all facets of their pursuits to dream, learn, create and share knowledge. It provides access to a wide array of technical ideas and information. Relying on its highly skilled staff, the Learning Centre encourages innovation, capitalises on appropriate technologies, forges effective partnerships, and unequivocally promotes excellence among the students. The Learning Centre provides an ambience conducive for the teaching and learning process with the support of 1000 volumes of text and reference books with RFID based Library Management System.</li>
+            </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+   
+             
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+

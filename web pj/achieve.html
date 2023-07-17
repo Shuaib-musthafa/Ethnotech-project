@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI & Data Science Education</title>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  
+  <style>
+     html {
+      scroll-behavior: smooth;
+    }
+    .mymove img{
+    margin-top: 15%;
+    margin-bottom: 5%;
+    width: 50%;
+    -webkit-animation: mover 2s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+    .navbar-contact {
+      background-color: #1e3351;
+      color: white;
+    }
+    .navbar-contact .navbar-text {
+      font-size: 14px;
+      margin-right: 10px;
+    }
+    body {
+      background-image: url(ai\ ds\ 2.png);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      padding-top: 70px;
+    }
+    .top-info .title{
+  display: inline-block;
+  margin: 25px 10px;
+    }
+    .thumb{
+        display: inline-block;
+  margin: 25px 10px;
+    }
+    .img-thumbnail_img_dentist{
+        display: inline-block;
+  margin: 25px 10px;
+    }
+    .course-details-area {
+      background-color: #f2f2f2;
+      border: 1px solid #ddd;
+      padding: 20px;
+      padding-bottom: 40px;
+    }
+    .default-padding {
+      padding: 20px;
+    }
+    .additional-section {
+      background-color: #fff;
+      padding: 40px;
+      display: none;
+    }
+    .additional-section h3 {
+      color: #333;
+      margin-bottom: 10px;
+    }
+    .additional-section p {
+      color: #555;
+      line-height: 1.5;
+    }
+    .course-details-area {
+      background-color: #fff;
+      padding: 40px;
+      margin-top: 20px;
+    }
+    .course-meta {
+      display: flex;
+      justify-content: space-between;
+    }
+    .course-meta .item {
+      flex: 1;
+      padding: 0 10px;
+      position: relative;
+    }
+    .course-meta .item:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 1px;
+      background-color: #ccc;
+      top: 0;
+      right: 0;
+    }
+    .course-meta h4 {
+      margin-bottom: 10px;
+    }
+    .content {
+      margin-top: 90px; /* Add margin to push content below fixed navbar */
+    }
+
+    .content {
+      display: none; /* Hide the content by default */
+      margin-top: 20px;
+    }
+    .active {
+      display: block; /* Show the active content */
+    }
+    .box {
+      text-align: justify;
+    }
+    .folder-icon {
+          font-size: 48px;
+          color: #007bff;
+        }
+  </style>
+    <script>
+        $(document).ready(function() {
+          $(window).scroll(function() {
+            var scrollPos = $(window).scrollTop();
+            var additionalSectionPos = $('.additional-section').offset().top;
+            var windowHeight = $(window).height();
+            
+            if (scrollPos > additionalSectionPos - windowHeight + 200) {
+              $('.additional-section').fadeIn();
+            } else {
+              $('.additional-section').fadeOut();
+            }
+          });
+        });
+      </script>
+        <script>
+            $(document).ready(function() {
+              $('.btn-group button').click(function() {
+                // Remove active class from all buttons
+                $('.btn-group button').removeClass('active');
+                
+                // Hide all content
+                $('.content').removeClass('active');
+                
+                // Add active class to the clicked button
+                $(this).addClass('active');
+                
+                // Get the index of the clicked button
+                var index = $(this).index();
+                
+                // Show the corresponding content based on the index
+                $('.content').eq(index).addClass('active');
+              });
+            });
+          </script>
+</head>
+<body>
+    
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="#">
+      <img src="1.png" alt="Logo" width="500" height="50" style="margin-left: 2rem;">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav" style="margin-left: 28rem;">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item ">
+          <a class="nav-link" href="a1.html">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="learn.html">LEARN</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="comp2.html">COMPLAIN</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="achieve.html">ACHIEVEMENT</a>
+        </li>
+      </ul>
+      
+    </div>
+  </nav>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+ 
+  <!-- Rest of your content -->
+    <div class="course-details-area default-padding" style="margin-top: 10rem;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="course-details-info">
+              <!-- Start Top Info -->
+              <div class="top-info">
+                <div class="title">
+                    <h2>Achievement given by AI&DS Department</h2>
+                  </div>
+                <div class="thumb">
+                    <img src="ach.png" alt="Thumb">    
+                  </div>
+                  <div class="par">
+                    <ul><br><br><br>
+                        <li>
+                            <p class="paragraph1" >
+                              The third year AI&DS students won second prize in the first International hackathon conducted in the month November 2022 with participants around 800 from 8 different countries. </p>
+                              <br><br><br> <img src="first_International_hackathon.webp" class="img-thumbnail img_dentist"  alt='Dentist'></img>
+                       </li>
+                     </ul>
+                  </div>
+                  
+                   </div>
+  
+              <!-- Rest of the course details -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="container">
+
+        
+          
+    </div>
+   
+             
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+

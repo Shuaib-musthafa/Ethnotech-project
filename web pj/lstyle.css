@@ -1,0 +1,123 @@
+html {
+    scroll-behavior: smooth;
+  }
+  .mymove img{
+  margin-top: 15%;
+  margin-bottom: 5%;
+  width: 50%;
+  -webkit-animation: mover 2s infinite  alternate;
+  animation: mover 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-20px); }
+}
+@keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-20px); }
+}
+  .navbar-contact {
+    background-color: #1e3351;
+    color: white;
+  }
+  .navbar-contact .navbar-text {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+  body {
+    background-image: url(ai\ ds\ 2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 70px;
+  }
+  .course-details-area {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    padding: 20px;
+    padding-bottom: 40px;
+  }
+  .default-padding {
+    padding: 20px;
+  }
+  .additional-section {
+    background-color: #fff;
+    padding: 40px;
+    display: none;
+  }
+  .additional-section h3 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  .additional-section p {
+    color: #555;
+    line-height: 1.5;
+  }
+  .course-details-area {
+    background-color: #fff;
+    padding: 40px;
+    margin-top: 20px;
+  }
+  .course-meta {
+    display: flex;
+    justify-content: space-between;
+  }
+  .course-meta .item {
+    flex: 1;
+    padding: 0 10px;
+    position: relative;
+  }
+  .course-meta .item:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    background-color: #ccc;
+    top: 0;
+    right: 0;
+  }
+  .course-meta h4 {
+    margin-bottom: 10px;
+  }
+  .content {
+    margin-top: 90px; /* Add margin to push content below fixed navbar */
+  }
+
+  .content {
+    display: none; /* Hide the content by default */
+    margin-top: 20px;
+  }
+  .active {
+    display: block; /* Show the active content */
+  }
+  .box {
+    text-align: justify;
+  }
+  .folder-icon {
+        font-size: 48px;
+        color: #007bff;
+      }
+      .box
+      {
+        margin-right: 3rem ;
+        width: 8rem;
+      }
+  .lang ul {
+    text-decoration: none;
+    display: flex;
+    }
+    .lang ul li
+    {
+        list-style: none;
+        text-align: center;
+    }
+    .lang img
+    {
+        margin-left: 15px;
+    }
+    #cess
+    {
+        margin-right: 2rem;
+        border-radius: 5px;
+    }
